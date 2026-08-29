@@ -74,6 +74,7 @@ python ${MPNN_PATH}/protein_mpnn_run.py \
 ```
 
 After running the command above, the results are as folows.
+
 | Chain | Num(MPNN) | WT AA | Top Designed Amino Acids (Frequency) |
 |--------|--------|
 | B | 116 | Y | Y: 60.0%, T: 40.0% |
