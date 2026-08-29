@@ -36,16 +36,12 @@ UL128:   139, 140, 141, 143, 144, 145
 UL130:   65, 66, 70, 97, 98, 99
 ```
 
+### 2.2 Sequence generatation by design
 
-### 2.2 
+ProteinMPNN was used to generate **100 candidate sequences** by following command while restricting mutations to the predefined designable positions.
+```text
 
-
-
-
-
-### 2.3 ProteinMPNN design
-
-ProteinMPNN was used to generate **100 candidate sequences** while restricting mutations to the predefined designable positions.
+```
 
 Candidate substitutions were subsequently filtered according to two criteria:
 
