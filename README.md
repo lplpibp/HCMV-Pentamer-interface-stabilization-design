@@ -11,44 +11,6 @@ The computational workflow combines structural modeling, interface residue selec
 
 ---
 
-## Workflow
-
-```text
-PDB 5VOB
-   │
-   ▼
-Structural template preparation
-   │
-   ▼
-Interface residue selection
-   │
-   ▼
-ProteinMPNN sequence design
-   │
-   ▼
-Mutation-frequency filtering
-   │
-   ▼
-Structural inspection
-   │
-   ▼
-AlphaFold3 modeling
-   │
-   ▼
-PC-Int1
-   │
-   ▼
-Second interface optimization
-   │
-   ▼
-AlphaFold3 modeling
-   │
-   ▼
-PC-Int2
-```
-
----
-
 ## 1. Structural Template Preparation
 
 The initial structural template of the HCMV pentamer was derived from the crystal structure **PDB 5VOB**.
