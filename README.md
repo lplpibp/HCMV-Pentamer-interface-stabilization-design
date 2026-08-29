@@ -25,7 +25,7 @@ Using **Coot**, the amino acid sequence was modified to match the wild-type (WT)
 
 Designable residues were identified according to three criteria:
 
-1. At least one atom of the residue was located within **10 Å** of the interface center (defined as the **NH1 atom of residue R66 in chain D (UL130)**).
+1. At least one atom of the residue was located within **10 Å** of the interface center (defined as the **NH1 atom of residue R66 in UL130**).
 2. The residue participated in the gL–UL128, UL128–UL130, or gL–UL130 interface, defined by at least one interatomic contact within **4 Å**.
 3. Residues protected by existing GSK patent (CN111094323B and CN113271968B) claims were excluded from redesign.
 
