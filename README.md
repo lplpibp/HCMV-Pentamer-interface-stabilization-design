@@ -71,7 +71,6 @@ python ${MPNN_PATH}/protein_mpnn_run.py \
     --sampling_temp="0.1" \
     --seed=42 \
     --batch_size=1
-
 ```
 
 Candidate substitutions were subsequently filtered according to two criteria:
