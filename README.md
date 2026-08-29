@@ -57,8 +57,11 @@ python ${MPNN_PATH}/helper_scripts/make_fixed_positions_dict.py \
     --input_path=${OUTPUT_DIR}/parsed_pdbs.jsonl \
     --output_path=${OUTPUT_DIR}/fixed_positions.jsonl \
     --chain_list="B C D" \
-    --position_list="141 144 146 152 154 159 161, 139 140 141 143 144 145, 65 66 70 97 98 99" \
+    --position_list="105 108 110 116 118 123 125, 111 112 113 115 116 117, 21 22 26 53 54 55" \
     --specify_non_fixed
+   # pdb A[40-713], B[37-273], C[29-163], D[45-214], E[19-129]
+   # --design_res="B:141,144,146,152,154,159,161 C:139,140,141,143,144,145 D:65,66,70,97,98,99" need shift
+   # --design_res="B:105,108,110,116,118,123,125 C:111,112,113,115,116,117 D:21,22,26,53,54,55"
 
 python ${MPNN_PATH}/protein_mpnn_run.py \
     --jsonl_path=${OUTPUT_DIR}/parsed_pdbs.jsonl \
@@ -68,6 +71,7 @@ python ${MPNN_PATH}/protein_mpnn_run.py \
     --sampling_temp="0.1" \
     --seed=42 \
     --batch_size=1
+
 ```
 
 Candidate substitutions were subsequently filtered according to two criteria:
