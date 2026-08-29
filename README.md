@@ -73,6 +73,11 @@ python ${MPNN_PATH}/protein_mpnn_run.py \
     --batch_size=1
 ```
 
+After running the command above, the results are as folows.
+```text
+
+```
+
 Candidate substitutions were subsequently filtered according to two criteria:
 
 1. The mutation occurred in more than **25%** of the generated sequences at that position.
