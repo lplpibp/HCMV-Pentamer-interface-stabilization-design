@@ -40,7 +40,34 @@ UL130:   65, 66, 70, 97, 98, 99
 
 ProteinMPNN was used to generate **100 candidate sequences** by following command while restricting mutations to the predefined designable positions.
 ```text
+MPNN_PATH=~/softwares/ProteinMPNN-main
+PDB_PATH="./WT.pdb"
+OUTPUT_DIR="./mpnn_output"
 
+mkdir -p ${OUTPUT_DIR}/inputs
+mkdir -p ${OUTPUT_DIR}/outputs
+
+cp ${PDB_PATH} ${OUTPUT_DIR}/inputs/
+
+python ${MPNN_PATH}/helper_scripts/parse_multiple_chains.py \
+    --input_path=${OUTPUT_DIR}/inputs \
+    --output_path=${OUTPUT_DIR}/parsed_pdbs.jsonl
+
+python ${MPNN_PATH}/helper_scripts/make_fixed_positions_dict.py \
+    --input_path=${OUTPUT_DIR}/parsed_pdbs.jsonl \
+    --output_path=${OUTPUT_DIR}/fixed_positions.jsonl \
+    --chain_list="B C D" \
+    --position_list="141 144 146 152 154 159 161, 139 140 141 143 144 145, 65 66 70 97 98 99" \
+    --specify_non_fixed
+
+python ${MPNN_PATH}/protein_mpnn_run.py \
+    --jsonl_path=${OUTPUT_DIR}/parsed_pdbs.jsonl \
+    --fixed_positions_jsonl=${OUTPUT_DIR}/fixed_positions.jsonl \
+    --out_folder=${OUTPUT_DIR}/outputs \
+    --num_seq_per_target=10 \
+    --sampling_temp="0.1" \
+    --seed=42 \
+    --batch_size=1
 ```
 
 Candidate substitutions were subsequently filtered according to two criteria:
