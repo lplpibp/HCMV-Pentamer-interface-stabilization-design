@@ -17,8 +17,6 @@ The initial structural template of the HCMV pentamer was derived from the crysta
 
 Using **Coot**, the amino acid sequence was modified to match the wild-type (WT) sequence used in this study. Missing loop regions were manually modeled to generate a complete structural template for subsequent computational design.
 
-The resulting WT model was used as the structural reference for both rounds of interface optimization.
-
 ---
 
 ## 2. Design of the gL–UL128–UL130 Interface
@@ -31,31 +29,22 @@ Designable residues were identified according to three criteria:
 
 1. At least one atom of the residue was located within **10 Å** of the interface center.
 2. The residue participated in the gL–UL128, UL128–UL130, or gL–UL130 interface, defined by at least one interatomic contact within **4 Å**.
-3. Residues protected by existing GSK patent claims were excluded from redesign.
-
-The excluded residues were:
-
-```text
-gL:      140, 145, 150, 160, 166
-UL128:   83, 98, 142
-UL130:   52, 62, 64, 95, 167, 204
-UL131A:  86
-```
-
-Relevant patent references:
-
-- CN111094323B
-- CN113271968B
-
-### 2.2 Designable residues
+3. Residues protected by existing GSK patent (CN111094323B and CN113271968B) claims were excluded from redesign.
 
 The final designable residues submitted to ProteinMPNN were:
-
 ```text
 gL:      141, 144, 146, 152, 154, 159, 161
 UL128:   139, 140, 141, 143, 144, 145
 UL130:   65, 66, 70, 97, 98, 99
 ```
+
+
+
+### 2.2 Designable residues
+
+
+
+
 
 ### 2.3 ProteinMPNN design
 
