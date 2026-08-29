@@ -64,7 +64,7 @@ python ${MPNN_PATH}/protein_mpnn_run.py \
     --jsonl_path=${OUTPUT_DIR}/parsed_pdbs.jsonl \
     --fixed_positions_jsonl=${OUTPUT_DIR}/fixed_positions.jsonl \
     --out_folder=${OUTPUT_DIR}/outputs \
-    --num_seq_per_target=10 \
+    --num_seq_per_target=100 \
     --sampling_temp="0.1" \
     --seed=42 \
     --batch_size=1
