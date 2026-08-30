@@ -79,12 +79,12 @@ After running the command above, the results are as folows.
 | Chain | Num(MPNN) | PDB ResNum | WT AA | Top Designed Amino Acids (Frequency) | Mutatations and effects |
 |--------|--------|--------|--------|--------|--------|
 | B | 116 | 152 | Y | Y: 73.0%, T: 18.0%, A: 4.0%, W: 3.0% | Y152T: poor packing |
-| B | 118 | 154 | C | C: 71.0%, V: 29.0% | C154V: Loss of disulfide bond |
-| B | 123 | 159 | C | C: 71.0%, A: 28.0%, S: 1.0% | C162A: Loss of disulfide bond |
+| B | 118 | 154 | C | C: 71.0%, V: 29.0% | C154V: loss of disulfide bond |
+| B | 123 | 159 | C | C: 71.0%, A: 28.0%, S: 1.0% | C162A: loss of disulfide bond |
 | B | 125 | 161 | G | G: 68.0%, S: 32.0% | G164S: disrupting local hydrophbic pocket |
-| C | 111 | 139 | K | P: 89.0%, R: 10.0%, K: 1.0% | K139P: Loss of H-bond; K139R: No significant effect |
+| C | 111 | 139 | K | P: 89.0%, R: 10.0%, K: 1.0% | K139P: loss of H-bond; K139R: No significant effect |
 | C | 112 | 140 | I | P: 100.0% | I140P: No significant effect |
-| C | 113 | 141 | T | G: 53.0%, R: 25.0%, S: 14.0%, K: 3.0% | T141G: Loss of H-bond; T141R: clash |
+| C | 113 | 141 | T | G: 53.0%, R: 25.0%, S: 14.0%, K: 3.0% | T141G: loss of H-bond; T141R: clash |
 | C | 115 | 143 | I | I: 36.0%, V: 26.0%, F: 20.0%, L: 15.0% | I143V: No significant effect  |
 | C | 116 | 144 | V | V: 97.0%, Y: 2.0%, L: 1.0% | V144Y: clash |
 | D | 21 | 65 | P | E: 77.0%, P: 20.0%, R: 2.0%, K: 1.0%| P65E: new salt bridge |
