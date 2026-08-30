@@ -76,10 +76,21 @@ python ${MPNN_PATH}/protein_mpnn_run.py \
 After running the command above, the results are as folows.
 
 
-| Chain | Num(MPNN) | WT AA | Top Designed Amino Acids (Frequency) |
-|--------|--------|--------|--------|
-| B | 116 | Y | Y: 60.0%, T: 40.0% |
-| B | 118 | C | C: 80.0%, V: 20.0% |
+| Chain | Num(MPNN) | PDB ResNum | WT AA | Top Designed Amino Acids (Frequency) |
+|--------|--------|--------|--------|--------|
+| B | 116 | 152 | Y | Y: 60.0%, T: 40.0% |
+| B | 118 | 154 | C | C: 80.0%, V: 20.0% |
+| B | 123 | 162 | C | C: 80.0%, A: 20.0% |
+| B | 125 | 164 | G | G: 66.0%, S: 33.0%, T: 1.0% |
+| C | 111 | 139 | K | P: 94.0%, R: 6.0% |
+| C | 112 | 140 | I | P: 100.0% |
+| C | 113 | 141 | T | G: 70.0%, R: 28.0%, K: 1.0%, P: 1.0% |
+| C | 115 | 143 | I | I: 41.0%, F: 29.0%, L: 15.0%, V: 14.0% |
+| D | 21 | 65 | P | E: 94.0%, P: 6.0% |
+| D | 22 | 66 | R | R: 87.0%, V: 7.0%, F: 6.0% |
+| D | 26 | 70 | Q | D: 55.0%, W: 26.0%, R: 11.0%, L: 6.0% |
+| D | 54 | 98 | T | T: 74.0%, I: 25.0%, V: 1.0% |
+| D | 55 | 99 | L | L: 96.0%, V: 4.0% |
 
 Candidate substitutions were subsequently filtered according to two criteria:
 
