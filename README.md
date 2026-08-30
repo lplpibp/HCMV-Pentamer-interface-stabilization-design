@@ -91,7 +91,7 @@ After running the command above, the results are as folows.
 | D | 22 | 66 | R | R: 91.0%, F: 4.0%, V: 4.0%, M: 1.0% | R66F: Extended hydrophbic pocket |
 | D | 26 | 70 | Q | D: 62.0%, W: 26.0%, R: 7.0%, E: 3.0% | Q70D: No effects; Q70W: Extended hydrophbic pocket |
 | D | 54 | 98 | T | T: 55.0%, I: 32.0%, A: 7.0%, V: 6.0% | T98I: Extended hydrophbic pocket |
-| D | 55 | 99 | L | L: 95.0%, V: 5.0% | L99V: : No effects |
+| D | 55 | 99 | L | L: 95.0%, V: 5.0% | L99V: No effects |
 
 Candidate substitutions were subsequently filtered according to two criteria:
 
@@ -105,14 +105,6 @@ UL130:P65E
 UL130:R66F
 UL130:Q70W
 UL130:T98I
-```
-
-The following substitutions were excluded after structural inspection:
-
-```text
-UL128:K139P
-UL128:I140P
-UL128:T141G
 ```
 
 ### 2.4 AlphaFold3 screening
