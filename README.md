@@ -89,10 +89,10 @@ Candidate substitutions were subsequently filtered according to two criteria:
 | C | 113 | 141 | T | G: 53.0%, R: 25.0%, S: 14.0%, K: 3.0% | T141G: loss of H-bond; T141R: clash |
 | C | 115 | 143 | I | I: 36.0%, V: 26.0%, F: 20.0%, L: 15.0% | I143V: No significant effect  |
 | C | 116 | 144 | V | V: 97.0%, Y: 2.0%, L: 1.0% | V144Y: clash |
-| D | 21 | 65 | P | E: 77.0%, P: 20.0%, R: 2.0%, K: 1.0%| P65E: new salt bridge |
-| D | 22 | 66 | R | R: 91.0%, F: 4.0%, V: 4.0%, M: 1.0% | R66F: extended hydrophobic pocket |
-| D | 26 | 70 | Q | D: 62.0%, W: 26.0%, R: 7.0%, E: 3.0% | Q70D: alternative interaction; Q70W: extended hydrophobic pocket |
-| D | 54 | 98 | T | T: 55.0%, I: 32.0%, A: 7.0%, V: 6.0% | T98I: extended hydrophobic pocket |
+| D | 21 | 65 | P | E: 77.0%, P: 20.0%, R: 2.0%, K: 1.0%| **P65E: new salt bridge** |
+| D | 22 | 66 | R | R: 91.0%, F: 4.0%, V: 4.0%, M: 1.0% | **R66F: extended hydrophobic pocket** |
+| D | 26 | 70 | Q | D: 62.0%, W: 26.0%, R: 7.0%, E: 3.0% | Q70D: alternative interaction; **Q70W: extended hydrophobic pocket** |
+| D | 54 | 98 | T | T: 55.0%, I: 32.0%, A: 7.0%, V: 6.0% | **T98I: extended hydrophobic pocket** |
 | D | 55 | 99 | L | L: 95.0%, V: 5.0% | L99V: No significant effect |
 
 The following substitutions were retained:
