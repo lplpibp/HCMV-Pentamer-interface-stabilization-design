@@ -208,7 +208,7 @@ Candidate substitutions were filtered using the same 2 criteria described above.
 The following substitutions were retained:
 
 ```text
-UL128:V128L/I; UL128:Y130C; UL130:V163C; UL130:T208V; UL131A:V82I/P; UL131A:V85L
+UL128:V128L/I; UL128:Y130C; UL130:V163C; UL130:T208V; UL131A:V82I/P/L; UL131A:V85L
 ```
 
 ### 3.4 AlphaFold3 screening
