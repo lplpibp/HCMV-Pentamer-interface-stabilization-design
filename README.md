@@ -98,10 +98,7 @@ Candidate substitutions were subsequently filtered according to two criteria:
 The following substitutions were retained:
 
 ```text
-UL130:P65E
-UL130:R66F
-UL130:Q70W
-UL130:T98I
+UL130:P65E; UL130:R66F; UL130:Q70W; UL130:T98I
 ```
 
 ### 2.4 AlphaFold3 screening
