@@ -108,8 +108,8 @@ UL130:T98I
 
 All two-, three-, and four-mutation combinations of the retained substitutions were subsequently modeled using **AlphaFold3**.
 
-![Evaluation of Mutation combinations by AlphaFold3](results/PC-Int1-selected.png)
-<img src="results/PC-Int1-selected.png" alt="图片描述" width="150" />
+#![Evaluation of Mutation combinations by AlphaFold3](results/PC-Int1-selected.png)
+<img src="results/PC-Int1-selected.png" alt="Evaluation of Mutation combinations by AlphaFold3" width="300" />
 
 Candidate models were ranked according to:
 
