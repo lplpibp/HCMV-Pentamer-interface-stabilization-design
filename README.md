@@ -207,7 +207,7 @@ Candidate substitutions were filtered using the same 2 criteria described above.
 
 Although the `UL128:Y130C` and `UL130:V163C` substitutions exhibit low sampling frequencies in ProteinMPNN sequence generation, spatial geometry analysis indicates that this residue pair forms a stabilizing inter-subunit disulfide bond across the UL128–UL130 interface. This covalent tether is designed to enhance the overall conformational stability and assembly rigidity of the pentameric complex; therefore, this pair was prioritized and retained for downstream experimental evaluation.
 
-The frequently predicted candidate `UL131A:V82P` disrupts the canonical $^{81}\text{NVT}^{83}$ ($N\text{-}X\text{-S/T}$, $X \neq \text{Pro}$) consensus motif, abolishing essential $N$-linked glycosylation at the Asn81 site. To maintain native post-translational modifications (PTMs) and structural fidelity while retaining favorable hydrophobic packing, the conservative substitution `V82L` was introduced as an alternative candidate for comparative evaluation.
+The frequently predicted candidate `UL131A:V82P` disrupts the canonical $^{81}\text{NVT}^{83}$ ($N\text{-}X\text{-S/T}$, $X \neq \text{Pro}$) consensus motif, abolishing essential $N$-linked glycosylation at the Asn81 site. To maintain native post-translational modifications (PTMs) and structural fidelity while retaining favorable hydrophobic packing, We introduced the third-order `V82L` mutation as a candidate mutation for comparative evaluation.
 
 Finally, the following substitutions were retained:
 
