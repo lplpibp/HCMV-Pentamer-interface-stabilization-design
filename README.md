@@ -206,12 +206,13 @@ Candidate substitutions were filtered using the same 2 criteria described above.
 | E | 100 | 118 | R | R: 90.0%, S: 6.0%, Q: 2.0%, I: 1.0% | R118S: poor packing |
 
 Although the `UL128:Y130C` and `UL130:V163C` substitutions exhibit low sampling frequencies in ProteinMPNN sequence generation, spatial geometry analysis indicates that this residue pair forms a stabilizing inter-subunit disulfide bond across the UL128–UL130 interface. This covalent tether is designed to enhance the overall conformational stability and assembly rigidity of the pentameric complex; therefore, this pair was prioritized and retained for downstream experimental evaluation.
+
 The frequently predicted candidate `UL131A:V82P` disrupts the canonical $^{81}\text{NVT}^{83}$ ($N\text{-}X\text{-S/T}$, $X \neq \text{Pro}$) consensus motif, abolishing essential $N$-linked glycosylation at the Asn81 site. To maintain native post-translational modifications (PTMs) and structural fidelity while retaining favorable hydrophobic packing, the conservative substitution `V82L` was introduced as an alternative candidate for comparative evaluation.
 
 The following substitutions were retained:
 
 ```text
-UL128:V128L/I; UL128:Y130C; UL130:V163C; UL130:T208V; UL131A:V82I/P/L; UL131A:V85L
+UL128:V128L/I; UL128:Y130C; UL130:V163C; UL130:T208V; UL131A:V82I/L; UL131A:V85L
 ```
 
 ### 3.4 AlphaFold3 screening
