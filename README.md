@@ -182,28 +182,28 @@ Candidate substitutions were filtered using the same 2 criteria described above.
 
 | Chain | Num(MPNN) | PDB ResNum | WT AA | Top Designed Amino Acids (Frequency) | Mutations and effects |
 |--------|--------|--------|--------|--------|--------|
-| C | 58 | 86 | R | R: 90.0%, K: 10.0% | Y152T: poor packing |
-| C | 96 | 124 | A | A: 98.0%, S: 2.0% | C154V: loss of disulfide bond |
-| C | 97 | 125 | A | R: 57.0%, N: 21.0%, Y: 15.0%, S: 5.0% | C162A: loss of disulfide bond |
-| C | 98 | 126 | G | R: 55.0%, K: 34.0%, E: 4.0%, T: 4.0% | G164S: disrupting local hydrophobic pocket |
-| C | 99 | 127 | S | E: 71.0%, T: 14.0%, S: 12.0%, K: 3.0% | K139P: loss of H-bond; K139R: No significant effect |
-| C | 100 | 128 | V | L: 72.0%, I: 23.0%, V: 4.0%, M: 1.0% | I140P: No significant effect |
-| C | 101 | 129 | P | P: 69.0%, D: 22.0%, E: 7.0%, N: 2.0% | T141G: loss of H-bond; T141R: clash |
-| C | 102 | 130 | Y | Y: 94.0%, G: 5.0%, C: 1.0% | I143V: No significant effect  |
-| D | 119 | 163 | V | A: 53.0%, V: 46.0%, C: 1.0% | V144Y: clash |
-| D | 120 | 164 | N | K: 91.0%, R: 9.0% | V144Y: clash |
-| D | 152 | 196 | F | L: 58.0%, F: 40.0%, I: 2.0% | **P65E: new salt bridge** |
-| D | 162 | 206 | F | L: 91.0%, V: 9.0% | **R66F: extended hydrophobic pocket** |
-| D | 164 | 208 | T | V: 83.0%, T: 17.0% | Q70D: alternative interaction; **Q70W: extended hydrophobic pocket** |
-| D | 165 | 209 | H | N: 86.0%, L: 7.0%, R: 5.0%, H: 2.0% | **T98I: extended hydrophobic pocket** |
-| D | 168 | 212 | L | L: 97.0%, I: 3.0% | L99V: No significant effect |
-| D | 169 | 213 | I | I: 68.0%, V: 24.0%, L: 8.0% | L99V: No significant effect |
-| E | 19 | 37 | W | W: 97.0%, F: 3.0% | V144Y: clash |
-| E | 64 | 82 | V | I: 45.0%, P: 41.0%, L: 11.0%, V: 3.0% | **P65E: new salt bridge** |
-| E | 67 | 85 | V | V: 82.0%, L: 17.0%, T: 1.0% | **R66F: extended hydrophobic pocket** |
-| E | 71 | 89 | I | I: 99.0%, V: 1.0% | Q70D: alternative interaction; **Q70W: extended hydrophobic pocket** |
-| E | 95 | 113 | L | I: 96.0%, L: 4.0% | **T98I: extended hydrophobic pocket** |
-| E | 100 | 118 | R | R: 90.0%, S: 6.0%, Q: 2.0%, I: 1.0% | L99V: No significant effect |
+| C | 58 | 86 | R | R: 90.0%, K: 10.0% | R86K: No significant effect |
+| C | 96 | 124 | A | A: 98.0%, S: 2.0% | A124S: disrupting local hydrophobic pocket |
+| C | 97 | 125 | A | R: 57.0%, N: 21.0%, Y: 15.0%, S: 5.0% | A125R/N: No significant effect |
+| C | 98 | 126 | G | R: 55.0%, K: 34.0%, E: 4.0%, T: 4.0% | G126R/K: No significant effect |
+| C | 99 | 127 | S | E: 71.0%, T: 14.0%, S: 12.0%, K: 3.0% | S127E/T: No significant effect |
+| C | 100 | 128 | V | L: 72.0%, I: 23.0%, V: 4.0%, M: 1.0% | **V128L/I: extended hydrophobic pocket** |
+| C | 101 | 129 | P | P: 69.0%, D: 22.0%, E: 7.0%, N: 2.0% | P129D: No significant effect |
+| C | 102 | 130 | Y | Y: 94.0%, G: 5.0%, C: 1.0% | Y130G: No significant effect; **Y130C: establishing disulfide bond** |
+| D | 119 | 163 | V | A: 53.0%, V: 46.0%, C: 1.0% | V163A: poor packing; **V163C: establishing disulfide bond** |
+| D | 120 | 164 | N | K: 91.0%, R: 9.0% | N164K/R: No significant effect |
+| D | 152 | 196 | F | L: 58.0%, F: 40.0%, I: 2.0% | F196L: poor packing |
+| D | 162 | 206 | F | L: 91.0%, V: 9.0% | F206L/V: poor packing |
+| D | 164 | 208 | T | V: 83.0%, T: 17.0% | **T208V: extended hydrophobic pocket**  |
+| D | 165 | 209 | H | N: 86.0%, L: 7.0%, R: 5.0%, H: 2.0% | H209N/L: poor packing |
+| D | 168 | 212 | L | L: 97.0%, I: 3.0% | L212I: No significant effect |
+| D | 169 | 213 | I | I: 68.0%, V: 24.0%, L: 8.0% | I213V: poor packing |
+| E | 19 | 37 | W | W: 97.0%, F: 3.0% | W37F: poor packing |
+| E | 64 | 82 | V | I: 45.0%, P: 41.0%, L: 11.0%, V: 3.0% | **V82I/P: extended hydrophobic pocket** |
+| E | 67 | 85 | V | V: 82.0%, L: 17.0%, T: 1.0% | **V85L: extended hydrophobic pocket** |
+| E | 71 | 89 | I | I: 99.0%, V: 1.0% | I89V: poor packing |
+| E | 95 | 113 | L | I: 96.0%, L: 4.0% | L113I: No significant effect |
+| E | 100 | 118 | R | R: 90.0%, S: 6.0%, Q: 2.0%, I: 1.0% | R118S: poor packing |
 
 The following substitutions were retained:
 
