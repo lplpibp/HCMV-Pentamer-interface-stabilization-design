@@ -105,7 +105,7 @@ UL130:P65E; UL130:R66F; UL130:Q70W; UL130:T98I
 
 All two-, three-, and four-mutation combinations of the retained substitutions were subsequently modeled using **AlphaFold3**.
 
-<img src="results/PC-Int1-selected.png" alt="Evaluation of Mutation combinations by AlphaFold3" width="600" />
+<img src="results/gL-UL128-UL130/PC-Int1-selected.png" alt="Evaluation of Mutation combinations by AlphaFold3" width="600" />
 
 Candidate models were ranked according to:
 
