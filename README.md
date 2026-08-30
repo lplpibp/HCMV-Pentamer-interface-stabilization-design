@@ -118,29 +118,14 @@ The highest-ranked design **UL130:P65E+R66F+T98I** was designated **PC-Int1** an
 
 ## 3. Design of the UL128–UL130–UL131A Interface
 
-To further improve pentamer stability, a second computational design round was performed at the **UL128–UL130–UL131A ternary interface**.
+To further improve pentamer stability, a second computational design round was performed at the **UL128–UL130–UL131A ternary interface** on **PC-Int1** background.
 
-The three stabilizing mutations identified in PC-Int1 were retained as the structural background:
 
-```text
-UL130:P65E
-UL130:R66F
-UL130:T98I
-```
-
-The UL128–UL130–UL131A interface was then independently optimized on the PC-Int1 background.
-
-### 3.1 Interface definition
+### 3.1 Designable residues determination
 
 The center of the UL128–UL130–UL131A interface was defined as the **Cβ atom of residue D210 in chain D (UL130)** of the 5VOB structure.
 
-Designable residues were selected using the same criteria as described above:
-
-1. Spatial proximity to the interface center.
-2. Participation in inter-subunit contacts.
-3. Exclusion of residues covered by existing GSK patent claims.
-
-### 3.2 Designable residues
+Designable residues were selected using the same 3 criteria as described above
 
 The final designable residues submitted to ProteinMPNN were:
 
@@ -155,15 +140,68 @@ UL131A:
 37, 82, 83, 85, 89, 113, 118
 ```
 
-### 3.3 ProteinMPNN design
+### 3.2 Sequence generatation by design
 
 ProteinMPNN was used to generate **100 candidate sequences** while restricting mutations to the predefined designable positions.
 
-Candidate substitutions were filtered using the same criteria described above:
+```text
+MPNN_PATH=~/softwares/ProteinMPNN-main
+PDB_PATH="./PC-Int1.pdb"
+OUTPUT_DIR="./mpnn_output"
 
-- Mutation frequency >25%
-- Favorable structural effects at the interface
+mkdir -p ${OUTPUT_DIR}/inputs
+mkdir -p ${OUTPUT_DIR}/outputs
 
+cp ${PDB_PATH} ${OUTPUT_DIR}/inputs/
+
+python ${MPNN_PATH}/helper_scripts/parse_multiple_chains.py \
+    --input_path=${OUTPUT_DIR}/inputs \
+    --output_path=${OUTPUT_DIR}/parsed_pdbs.jsonl
+
+python ${MPNN_PATH}/helper_scripts/make_fixed_positions_dict.py \
+    --input_path=${OUTPUT_DIR}/parsed_pdbs.jsonl \
+    --output_path=${OUTPUT_DIR}/fixed_positions.jsonl \
+    --chain_list="C D E" \
+    --position_list="58 72 95 96 97 98 99 100 101 102, 117 119 120 121 152 162 163 164 165 166 167 168 169, 19 64 65 67 71 95 100" \
+    --specify_non_fixed
+   # pdb A[40-713], B[37-273], C[29-163], D[45-214], E[19-129]
+   # --design_res="C:86, 100, 123, 124, 125, 126, 127, 128, 129, 130 D:161, 163, 164, 165, 196, 206, 207, 208, 209, 210, 211, 212, 213 E:37, 82, 83, 85, 89, 113, 118" need shift
+   # --design_res="C:58, 72, 95, 96, 97, 98, 99, 100, 101, 102 D:117, 119, 120, 121, 152, 162, 163, 164, 165, 166, 167, 168, 169 E:19, 64, 65, 67, 71, 95, 100"
+
+python ${MPNN_PATH}/protein_mpnn_run.py \
+    --jsonl_path=${OUTPUT_DIR}/parsed_pdbs.jsonl \
+    --fixed_positions_jsonl=${OUTPUT_DIR}/fixed_positions.jsonl \
+    --out_folder=${OUTPUT_DIR}/outputs \
+    --num_seq_per_target=100 \
+    --sampling_temp="0.2" \
+    --seed=37 \
+    --batch_size=1
+```
+
+Candidate substitutions were filtered using the same 2 criteria described above.
+
+| Chain | Num(MPNN) | PDB ResNum | WT AA | Top Designed Amino Acids (Frequency) | Mutations and effects |
+|--------|--------|--------|--------|--------|--------|
+| B | 116 | 152 | Y | Y: 73.0%, T: 18.0%, A: 4.0%, W: 3.0% | Y152T: poor packing |
+| B | 118 | 154 | C | C: 71.0%, V: 29.0% | C154V: loss of disulfide bond |
+| B | 123 | 159 | C | C: 71.0%, A: 28.0%, S: 1.0% | C162A: loss of disulfide bond |
+| B | 125 | 161 | G | G: 68.0%, S: 32.0% | G164S: disrupting local hydrophobic pocket |
+| C | 111 | 139 | K | P: 89.0%, R: 10.0%, K: 1.0% | K139P: loss of H-bond; K139R: No significant effect |
+| C | 112 | 140 | I | P: 100.0% | I140P: No significant effect |
+| C | 113 | 141 | T | G: 53.0%, R: 25.0%, S: 14.0%, K: 3.0% | T141G: loss of H-bond; T141R: clash |
+| C | 115 | 143 | I | I: 36.0%, V: 26.0%, F: 20.0%, L: 15.0% | I143V: No significant effect  |
+| C | 116 | 144 | V | V: 97.0%, Y: 2.0%, L: 1.0% | V144Y: clash |
+| D | 21 | 65 | P | E: 77.0%, P: 20.0%, R: 2.0%, K: 1.0%| **P65E: new salt bridge** |
+| D | 22 | 66 | R | R: 91.0%, F: 4.0%, V: 4.0%, M: 1.0% | **R66F: extended hydrophobic pocket** |
+| D | 26 | 70 | Q | D: 62.0%, W: 26.0%, R: 7.0%, E: 3.0% | Q70D: alternative interaction; **Q70W: extended hydrophobic pocket** |
+| D | 54 | 98 | T | T: 55.0%, I: 32.0%, A: 7.0%, V: 6.0% | **T98I: extended hydrophobic pocket** |
+| D | 55 | 99 | L | L: 95.0%, V: 5.0% | L99V: No significant effect |
+
+The following substitutions were retained:
+
+```text
+UL130:P65E; UL130:R66F; UL130:Q70W; UL130:T98I
+```
 The following substitutions were retained:
 
 ```text
@@ -186,8 +224,6 @@ UL130:F196L
 UL130:F206L
 UL131A:L113I
 ```
-
-These substitutions were excluded because structural analysis suggested that they were unlikely to introduce additional favorable interfacial interactions or could potentially perturb the local packing environment.
 
 ### 3.4 AlphaFold3 screening
 
