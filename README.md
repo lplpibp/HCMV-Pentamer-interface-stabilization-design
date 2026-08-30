@@ -101,7 +101,7 @@ The following substitutions were retained:
 UL130:P65E; UL130:R66F; UL130:Q70W; UL130:T98I
 ```
 
-### 2.4 AlphaFold3 screening
+### 2.3 AlphaFold3 screening
 
 All two-, three-, and four-mutation combinations of the retained substitutions were subsequently modeled using **AlphaFold3**.
 
@@ -215,7 +215,7 @@ Finally, the following substitutions were retained:
 UL128:V128L/I; UL128:Y130C; UL130:V163C; UL130:T208V; UL131A:V82I/L; UL131A:V85L
 ```
 
-### 3.4 AlphaFold3 screening
+### 3.3 AlphaFold3 screening
 
 All combinations of the retained mutations were subsequently modeled using **AlphaFold3** together with the three stabilizing mutations from PC-Int1.
 
