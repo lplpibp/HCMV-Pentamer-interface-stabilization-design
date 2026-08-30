@@ -108,20 +108,14 @@ UL130:T98I
 
 All two-, three-, and four-mutation combinations of the retained substitutions were subsequently modeled using **AlphaFold3**.
 
+![Evaluation of Mutation combinations by AlphaFold3](results/PC-Int1-selected.png)
+
 Candidate models were ranked according to:
 
 1. The average pLDDT of the candidate mutation sites.
 2. For tied candidates, the backbone RMSD of the designed residues relative to the WT structure was used as a secondary criterion.
 
-The highest-ranked design contained:
-
-```text
-UL130:P65E
-UL130:R66F
-UL130:T98I
-```
-
-This design was designated **PC-Int1** and selected for subsequent experimental validation.
+The highest-ranked design **UL130:P65E+R66F+T98I** was designated **PC-Int1** and selected for subsequent experimental validation.
 
 ---
 
