@@ -85,13 +85,13 @@ After running the command above, the results are as folows.
 | C | 111 | 139 | K | P: 89.0%, R: 10.0%, K: 1.0% | K139P: No effects; K139R: No effects | |
 | C | 112 | 140 | I | P: 100.0% | I140P: No effects |
 | C | 113 | 141 | T | G: 53.0%, R: 25.0%, S: 14.0%, K: 3.0% | T141G: No effects; T141R: No effects |
-| C | 115 | 143 | I | I: 36.0%, V: 26.0%, F: 20.0%, L: 15.0% |
-| C | 116 | 144 | V | V: 97.0%, Y: 2.0%, L: 1.0% |
-| D | 21 | 65 | P | E: 77.0%, P: 20.0%, R: 2.0%, K: 1.0%|
-| D | 22 | 66 | R | R: 91.0%, F: 4.0%, V: 4.0%, M: 1.0% |
-| D | 26 | 70 | Q | D: 62.0%, W: 26.0%, R: 7.0%, E: 3.0% |
-| D | 54 | 98 | T | T: 55.0%, I: 32.0%, A: 7.0%, V: 6.0% |
-| D | 55 | 99 | L | L: 95.0%, V: 5.0% |
+| C | 115 | 143 | I | I: 36.0%, V: 26.0%, F: 20.0%, L: 15.0% | I143V: No effects |
+| C | 116 | 144 | V | V: 97.0%, Y: 2.0%, L: 1.0% | V144Y: No effects |
+| D | 21 | 65 | P | E: 77.0%, P: 20.0%, R: 2.0%, K: 1.0%| P65E: Salt bridge |
+| D | 22 | 66 | R | R: 91.0%, F: 4.0%, V: 4.0%, M: 1.0% | R66F: Extended hydrophbic pocket |
+| D | 26 | 70 | Q | D: 62.0%, W: 26.0%, R: 7.0%, E: 3.0% | Q70D: No effects; Q70W: Extended hydrophbic pocket |
+| D | 54 | 98 | T | T: 55.0%, I: 32.0%, A: 7.0%, V: 6.0% | T98I: Extended hydrophbic pocket |
+| D | 55 | 99 | L | L: 95.0%, V: 5.0% | L99V: : No effects |
 
 Candidate substitutions were subsequently filtered according to two criteria:
 
