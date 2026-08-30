@@ -219,18 +219,13 @@ UL128:V128L/I; UL128:Y130C; UL130:V163C; UL130:T208V; UL131A:V82I/L; UL131A:V85L
 
 All combinations of the retained mutations were subsequently modeled using **AlphaFold3** together with the three stabilizing mutations from PC-Int1.
 
-Candidate designs were ranked according to:
+<img src="results/UL128–UL130–UL131A/PC-Int2-selected.png" alt="Evaluation of Mutation combinations by AlphaFold3" width="600" />
 
-1. The average pLDDT of the designed residues.
-2. The local backbone RMSD of the designed residues relative to the WT structure.
-
-The highest-ranked design contained four additional substitutions:
+The highest-ranked design contained four additional substitutions (on the PC-Int1 background):
 
 ```text
 UL128:V128I; UL128:Y130C; UL130:V163C; UL131A:V82L
 ```
-
-on the PC-Int1 background.
 
 This design was designated **PC-Int2** and selected for subsequent experimental characterization.
 
