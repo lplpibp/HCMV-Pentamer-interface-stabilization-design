@@ -199,7 +199,7 @@ Candidate substitutions were filtered using the same 2 criteria described above.
 | D | 168 | 212 | L | L: 97.0%, I: 3.0% | L212I: No significant effect |
 | D | 169 | 213 | I | I: 68.0%, V: 24.0%, L: 8.0% | I213V: poor packing |
 | E | 19 | 37 | W | W: 97.0%, F: 3.0% | W37F: poor packing |
-| E | 64 | 82 | V | I: 45.0%, P: 41.0%, L: 11.0%, V: 3.0% | **V82I/P: extended hydrophobic pocket** |
+| E | 64 | 82 | V | I: 45.0%, P: 41.0%, L: 11.0%, V: 3.0% | **V82I/P/L: extended hydrophobic pocket** |
 | E | 67 | 85 | V | V: 82.0%, L: 17.0%, T: 1.0% | **V85L: extended hydrophobic pocket** |
 | E | 71 | 89 | I | I: 99.0%, V: 1.0% | I89V: poor packing |
 | E | 95 | 113 | L | I: 96.0%, L: 4.0% | L113I: No significant effect |
@@ -223,46 +223,12 @@ Candidate designs were ranked according to:
 The highest-ranked design contained four additional substitutions:
 
 ```text
-UL128:V128I
-UL128:Y130C
-UL130:V163C
-UL131A:V82L
+UL128:V128I; UL128:Y130C; UL130:V163C; UL131A:V82L
 ```
 
 on the PC-Int1 background.
 
 This design was designated **PC-Int2** and selected for subsequent experimental characterization.
-
----
-
-## 4. Final Designs
-
-| Design | Background | Optimized interface | Mutations |
-|---|---|---|---|
-| **WT** | 5VOB-derived WT | — | — |
-| **PC-Int1** | WT | gL–UL128–UL130 | UL130:P65E, R66F, T98I |
-| **PC-Int2** | PC-Int1 | UL128–UL130–UL131A | UL128:V128I, Y130C; UL130:V163C; UL131A:V82L |
-
-### PC-Int1
-
-```text
-UL130:P65E
-UL130:R66F
-UL130:T98I
-```
-
-### PC-Int2
-
-```text
-UL130:P65E
-UL130:R66F
-UL130:T98I
-
-UL128:V128I
-UL128:Y130C
-UL130:V163C
-UL131A:V82L
-```
 
 ---
 
@@ -278,77 +244,6 @@ The computational design workflow used the following software:
 
 ---
 
-## 6. Repository Structure
-
-```text
-HCMV-pentamer-design/
-│
-├── README.md
-│
-├── structures/
-│   ├── 5VOB/
-│   ├── WT/
-│   ├── PC-Int1/
-│   └── PC-Int2/
-│
-├── proteinmpnn/
-│   ├── PC-Int1/
-│   └── PC-Int2/
-│
-├── alphafold3/
-│   ├── PC-Int1/
-│   └── PC-Int2/
-│
-├── scripts/
-│   ├── interface_selection.py
-│   ├── analyze_mpnn_sequences.py
-│   ├── filter_mutations.py
-│   └── analyze_af3_models.py
-│
-└── results/
-    ├── PC-Int1/
-    └── PC-Int2/
-```
-
----
-
-## 7. Key Parameters
-
-| Parameter | Value |
-|---|---:|
-| Interface distance cutoff | 10 Å |
-| Interatomic contact cutoff | 4 Å |
-| ProteinMPNN sequences per round | 100 |
-| Mutation frequency threshold | >25% |
-| Structural prediction | AlphaFold3 |
-
----
-
-## 8. Citation
-
-If you use the computational workflow or designs described in this repository, please cite the associated publication and the corresponding software.
-
-### Structural template
-
-**PDB 5VOB**
-
-### ProteinMPNN
-
-Dauparas et al.  
-*Robust deep learning–based protein sequence design using ProteinMPNN.*
-
-### AlphaFold3
-
-Abramson et al.  
-*Accurate structure prediction of biomolecular interactions with AlphaFold 3.*
-
-### Coot
-
-Emsley et al.  
-*Coot: model-building tools for molecular graphics.*
-
----
-
-## 9. License
+## 6. License
 
 Please see the `LICENSE` file for information regarding the use and redistribution of the code and data contained in this repository.
