@@ -75,7 +75,7 @@ python ${MPNN_PATH}/protein_mpnn_run.py \
 
 After running the command above, the results are as folows.
 Candidate substitutions were subsequently filtered according to two criteria:
-1. The mutation occurred in **top 2** mutaion list or more than **25%** of the generated sequences at that position.
+1. The mutation occurred in **top 2** or more than **25%** of the generated sequences at that position.
 2. Structural inspection indicated the introduction of additional favorable interfacial interactions, including hydrogen bonds, salt bridges, or improved hydrophobic packing.
 
 | Chain | Num(MPNN) | PDB ResNum | WT AA | Top Designed Amino Acids (Frequency) | Mutatations and effects |
