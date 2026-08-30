@@ -74,7 +74,9 @@ python ${MPNN_PATH}/protein_mpnn_run.py \
 ```
 
 After running the command above, the results are as folows.
-
+Candidate substitutions were subsequently filtered according to two criteria:
+1. The mutation occurred in **top 2** mutaion list or more than **25%** of the generated sequences at that position.
+2. Structural inspection indicated the introduction of additional favorable interfacial interactions, including hydrogen bonds, salt bridges, or improved hydrophobic packing.
 
 | Chain | Num(MPNN) | PDB ResNum | WT AA | Top Designed Amino Acids (Frequency) | Mutatations and effects |
 |--------|--------|--------|--------|--------|--------|
@@ -92,11 +94,6 @@ After running the command above, the results are as folows.
 | D | 26 | 70 | Q | D: 62.0%, W: 26.0%, R: 7.0%, E: 3.0% | Q70D: alternative interaction; Q70W: extended hydrophobic pocket |
 | D | 54 | 98 | T | T: 55.0%, I: 32.0%, A: 7.0%, V: 6.0% | T98I: extended hydrophobic pocket |
 | D | 55 | 99 | L | L: 95.0%, V: 5.0% | L99V: No significant effect |
-
-Candidate substitutions were subsequently filtered according to two criteria:
-
-1. The mutation occurred in more than **25%** of the generated sequences at that position.
-2. Structural inspection indicated the introduction of additional favorable interfacial interactions, including hydrogen bonds, salt bridges, or improved hydrophobic packing.
 
 The following substitutions were retained:
 
