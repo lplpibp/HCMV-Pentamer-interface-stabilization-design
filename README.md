@@ -209,7 +209,7 @@ Although the `UL128:Y130C` and `UL130:V163C` substitutions exhibit low sampling 
 
 The frequently predicted candidate `UL131A:V82P` disrupts the canonical $^{81}\text{NVT}^{83}$ ($N\text{-}X\text{-S/T}$, $X \neq \text{Pro}$) consensus motif, abolishing essential $N$-linked glycosylation at the Asn81 site. To maintain native post-translational modifications (PTMs) and structural fidelity while retaining favorable hydrophobic packing, the conservative substitution `V82L` was introduced as an alternative candidate for comparative evaluation.
 
-The following substitutions were retained:
+Finally, the following substitutions were retained:
 
 ```text
 UL128:V128L/I; UL128:Y130C; UL130:V163C; UL130:T208V; UL131A:V82I/L; UL131A:V85L
