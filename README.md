@@ -78,7 +78,7 @@ Candidate substitutions were subsequently filtered according to two criteria:
 1. The mutation occurred in **top 2** or more than **25%** of the generated sequences at that position.
 2. Structural inspection indicated the introduction of additional favorable interfacial interactions, including hydrogen bonds, salt bridges, or improved hydrophobic packing.
 
-| Chain | Num(MPNN) | PDB ResNum | WT AA | Top Designed Amino Acids (Frequency) | Mutatations and effects |
+| Chain | Num(MPNN) | PDB ResNum | WT AA | Top Designed Amino Acids (Frequency) | Mutations and effects |
 |--------|--------|--------|--------|--------|--------|
 | B | 116 | 152 | Y | Y: 73.0%, T: 18.0%, A: 4.0%, W: 3.0% | Y152T: poor packing |
 | B | 118 | 154 | C | C: 71.0%, V: 29.0% | C154V: loss of disulfide bond |
