@@ -231,8 +231,25 @@ This design was designated **PC-Int2** and selected for subsequent experimental 
 
 ---
 
-## 4. Liner design
-To generate geometrically feasible fusion architectures between adjacent protein domains, de novo backbone diffusion was conducted using RFdiffusion with the Contigmap framework. The linker exploration space was set to a continuous length range of 5 to 25 residues, and 200 independent diffusion simulations were executed.In Silico Structural Assessment MetricsGenerated backbones were systematically evaluated across two key structural criteria to ensure non-strained, physically valid connectivity:Linker Length Sampling and Yield Distribution:Backbone generation frequency across discrete linker lengths (5–25 aa) was quantified to profile topological convergence and identify the most thermodynamically accessible spacing between fusion termini.Peptide Bond Geometry and Local Backbone Tension ($C_\alpha - C_\alpha$ Distance):To verify that diffusion-generated loop backbones maintained natural peptide bond geometry without non-physical bond stretching or structural distortion, the maximum adjacent $C_\alpha - C_\alpha$ Euclidean distance was measured across the entire flexible region (including immediate flanking residues $\pm 1$ aa). Generated ensembles were screened against the ideal trans-peptide $C_\alpha - C_\alpha$ bond distance benchmark ($3.80\text{ \AA}$).Final Construct Specifications (PC-Fuse)Candidate configurations demonstrating optimal domain orientation, low local backbone strain, and sufficient inter-domain spacing were selected for downstream modeling. The finalized single-chain fusion construct was engineered as follows:UL128 (residues 29–163) fused to UL130 (residues 45–214) via a 15-residue flexible linker: (GGGGS)3UL130 (residues 45–214) fused to UL131A (residues 19–129) via a 12-residue flexible linker: (GGGS)3The resulting full-length single-chain construct was designated PC-Fuse and subjected to downstream structural validation and experimental characterization.
+## 4. Linker design
+### 4.1 Linker backbone generation
+To generate geometrically feasible fusion architectures between adjacent protein domains, de novo backbone diffusion was conducted using RFdiffusion with the Contigmap framework. 
+For UL128_UL130_linker:
+```text
+~/softwares//RFdiffusion/scripts/run_inference.py diffuser.T=15 inference.cautious=False 'contigmap.contigs=[C29-163/5-25/D45-214]' inference.output_prefix=test_outputs/UL128_UL130_linker inference.input_pdb=ULs_pdbs.pdb inference.num_designs=200
+```
+For UL130_UL131A_linker:
+```text
+~/softwares//RFdiffusion/scripts/run_inference.py diffuser.T=15 inference.cautious=False 'contigmap.contigs=[D45-214/5-25/E19-129]' inference.output_prefix=test_outputs/UL130_UL131A_linker inference.input_pdb=ULs_pdbs.pdb inference.num_designs=200
+```
+### 4.2 Linker length seletion
+In Silico Structural Assessment MetricsGenerated backbones were systematically evaluated across two key structural criteria:
+
+Linker Length Sampling and Yield Distribution
+
+Peptide Bond Geometry: the maximum adjacent $C_\alpha - C_\alpha$ Euclidean distance was measured across the entire flexible region (including immediate flanking residues $\pm 1$ aa). 
+
+The finalized single-chain fusion construct was engineered as follows:UL128 (residues 29–163) fused to UL130 (residues 45–214) via a 15-residue flexible linker: (GGGGS)3UL130 (residues 45–214) fused to UL131A (residues 19–129) via a 12-residue flexible linker: (GGGS)3The resulting full-length single-chain construct was designated PC-Fuse and subjected to downstream structural validation and experimental characterization.
 
 ## 5. Software
 
