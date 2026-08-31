@@ -251,9 +251,11 @@ In Silico Structural Assessment MetricsGenerated backbones were systematically e
 2. Peptide Bond Geometry: the maximum adjacent $C_\alpha - C_\alpha$ Euclidean distance was measured across the entire flexible region (including immediate flanking residues $\pm 1$ aa).
 
 For linker between UL128 and UL130:
+
 <img src="results/Linker/result_UL128_UL130_linker.png" alt="Linker features" width="600" />
 
 For linker between UL130 and UL131A:
+
 <img src="results/Linker/result_UL130_UL131A_linker.png" alt="Linker features" width="600" />
 
 The finalized single-chain fusion construct was engineered as follows:
