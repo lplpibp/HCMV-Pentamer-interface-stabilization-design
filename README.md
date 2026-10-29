@@ -269,12 +269,12 @@ The resulting full-length single-chain construct was designated **PC-Fuse** and 
 
 The computational design workflow used the following software:
 
-| Software | Purpose |
-|---|---|
-| [Coot](https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/) | Structural model preparation and manual loop modeling |
-| [ProteinMPNN](https://github.com/dauparas/ProteinMPNN) | Protein sequence design |
-| [AlphaFold3](https://github.com/google-deepmind/alphafold3) | Structural prediction and candidate evaluation |
-| [RFDiffusion](https://github.com/RosettaCommons/RFdiffusion) | Linker backbone generation |
+| Software | Source | Purpose |
+|---|---|---|
+| [Coot version 0.9.8.92] | (https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/) | Structural model preparation and manual loop modeling |
+| [ProteinMPNN] | (https://github.com/dauparas/ProteinMPNN) | Protein sequence design |
+| [AlphaFold3] | (https://github.com/google-deepmind/alphafold3) | Structural prediction and candidate evaluation |
+| [RFDiffusion] | (https://github.com/RosettaCommons/RFdiffusion) | Linker backbone generation |
 
 ---
 
